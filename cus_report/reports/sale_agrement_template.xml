@@ -4,15 +4,15 @@
         <template id="cus_report.report_post_view">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
-                  <div class="row" style="font-size:0.8rem;">
+                  <div class="row" style="font-size:1rem;">
                     
-                    <div class="column" style="float: left; border: 1px solid black; width: 32%;  height: 100%; margin-right: 1%;">
+                    <div class="column" style="float: left; font-size:0.6rem; border: 1px solid black; width: 32%;  height: 100%; margin-right: 1%;">
                     
                       <table class="table table-dark" style="width:100%;">
                       <tbody>
                     <tr style="height: 65.5px;">
                     <td style="align-items: center; ">
-                    <h5 style="border: 1px solid red; font-size:15px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
+                    <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
                     </td>
                     <td style="align-items: center; ">
                     <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
@@ -74,7 +74,7 @@
                     </div>
                     <div>
                     
-                      <table class="table table-dark" style="border: 1px solid black; width:100%;">
+                      <table class="table table-dark" style="border-collapse:collapse; width:100%;">
                     <thead>
                     <tr style="background-color: 878493; width: 100px;">
                       <th style="text-align: left; width: 98px; font-size:13px;"><strong>Name</strong></th>
@@ -92,24 +92,27 @@
                         </tr>
                       </tbody>
                     </table>
-                      <table style=" width=1000px;">
-                    <tbody>
-                    <tr style="height: 23px;">
-                      <td style="font-size:13px;"><strong>Total Due within Due Date</strong></td>
-                      <td style="font-size:13px;"><strong>22450</strong></td>
-                    
-                    </tr>
-                    </tbody>
-                    </table>
-                      <br/>
-                      <div>
-                        <td style="font-size: 22px;"><u><strong>Late Payment Fine Slab</strong></u></td>
-                       <br/> <br/>
-                        <strong>Days After Due Date</strong>
-                      </div>
+                      <table class="table table-dark" style="width:100%;">
+                        <thead>
+                        <tr style="width: 100px;">
+                        <th style="text-align: left; width: 98px; font-size:13px; margin-left: 5%;">Total due within due date</th>
+                        <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;">22,450</th>
+                        </tr>
+                        </thead>
+                        
+                          
+                        </table>
+                    <div style=" margin-left: 5%">
+                      <h4 style="font-size:13px;"><u><strong>Late Payment Fine Slab</strong></u></h4>
+                      <h4 style="font-size:13px;">Days After Due Date</h4>
+                    </div>
+                      
+                     
+                       
                       
                       
-                      <table class="table table-dark" style="border: 1px solid grey; width:100%;">
+                      
+                      <table class="table table-dark" style="text-align: center; margin-left: 5%; border-collapse:collapse; width:90%;">
                       <thead>
                         <tr>
                           
@@ -139,14 +142,15 @@
                         </tr>
                       </tbody>
                     </table>
-                      <h6 style="font-weight: bold; font-size: 14px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
                       <div>
-                        <p style="padding-inline: 20px; margin: 10px 10px 10px 10px; color: grey;" >
+                      <h6 style="font-weight: bold; font-size: 13px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
+                      
+                        <p style="padding-inline: 10px; margin: 2px 10px 10px 10px;  font-size: 10px; color: grey;">
                           In case of any query please contact the school office or the
                     LACAS accounts department.
                     The amount can be deposited through Cheque of Bank Alfalah or
                     cash at any branch of Bank Alfalah except Alfalah Islamic
-                    Branch.<br></br>
+                    Branch.<br/>
                     On line payment through ALFA App and Debit/Credit card is also
                     available as per details mentioned on LACAS website.
                     Security is refundable only if one month’s advance notice is given
@@ -158,10 +162,10 @@
                       <table class="table " style="width:100%;">
                         <tbody>
                          <td>   
-                        <SPAN STYLE="text-decoration:overline; text-align: left; font-weight:bold">Bank Officer Sign., Stamp  Date</SPAN>
+                        <SPAN STYLE="text-decoration:overline; text-align: left;  font-size: 13px; font-weight:bold">Bank Officer Sign., Stamp  Date</SPAN>
                       </td>
                       <td>
-                        <SPAN STYLE="text-decoration:overline; text-align: right; font-weight:bold">Sign. Depositor</SPAN> 
+                        <SPAN STYLE="text-decoration:overline; text-align: right;  font-size: 13px; font-weight:bold">Sign. Depositor</SPAN> 
                       </td>
                       </tbody>    
                       </table>
@@ -172,19 +176,19 @@
                   
                     
                     <!--2nd box-->
-                      <div class="column" style="float: left; border: 1px solid black; width: 32%;  height: 100%; margin-right: 1%;">
+                    <div class="column" style="float: left; font-size:0.6rem; border: 1px solid black; width: 32%;  height: 100%; margin-right: 1%;">
                     
-                      <table class="table table-dark" style="width:100%;"> 
-                       <tbody>
+                      <table class="table table-dark" style="width:100%;">
+                      <tbody>
                     <tr style="height: 65.5px;">
                     <td style="align-items: center; ">
-                    <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script                     ;">La<span style="background: black; color: yellow;">cas</span></h5>
+                    <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
                     </td>
                     <td style="align-items: center; ">
                     <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
                     </td>
                     <td style="">
-                      <img src="/cus_report/static/src/description/logo.png" height="50" width="50"/>
+                      <img src="/cus_report/static/src/description/logo.png" height="50" width="50" style="object-fit: fill;"/>
                     
                     </td>
                     </tr> 
@@ -196,16 +200,16 @@
                       <table class="table table-dark" style="width:100%;">
                     <tbody>
                     <tr>
-                    <td style="text-align: left;color: grey">Bill Number:</td>
-                      <td style=""><strong>294388</strong></td>
+                    <td style="text-align: left;color: grey; font-size:13px;">Bill Number:</td>
+                      <td style="font-size:13px;"><strong>294388</strong></td>
                     </tr>
                     <tr>
-                    <td style="text-align: left;color: grey">Bill Genrated on :</td>
-                      <td style=" "><strong>21-Apr-2022</strong></td>
+                    <td style="text-align: left;color: grey; font-size:13px;">Bill Genrated on :</td>
+                    <td style="font-size:13px;"><strong>21-Apr-2022</strong></td>
                     </tr>
                     <tr>
-                    <td style="text-align: left;color: grey">Due on :</td>
-                      <td><span style="background-color: yellow;"><strong>12-May-2022</strong></span></td>
+                    <td style="text-align: left; color: grey; font-size:13px;">Due on :</td>
+                      <td><span style="background-color: yellow; font-size:13px;"><strong>12-May-2022</strong></span></td>
                     </tr>
                     </tbody>
                     </table>
@@ -216,66 +220,69 @@
                       <table class="table table-dark" style="width:100%;">
                     <tbody>
                     <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Student:</td>
-                      <td style="width: 97.475px; height: 23px;"><strong>Muhammad ESSA</strong></td>
+                    <td style="width: 131.525px; height: 23px;color: grey; font-size:13px;">Student:</td>
+                    <td style="width: 97.475px; height: 23px; font-size:13px;"><strong>Muhammad ESSA</strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Student ID :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>025478</strong></td>
+                    <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Student ID :</td>
+                    <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>025478</strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Class :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>Class 3-C</strong></td>
+                    <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Class :</td>
+                    <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>Class 3-C</strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Branch :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>Johar Town School</strong></td>
+                    <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Branch :</td>
+                      <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>Johar Town School</strong></td>
                     </tr>
                     <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Billing Month :</td>
-                      <td style="width: 97.475px; height: 23px;"><strong>12-May-2022</strong></td>
+                    <td style="width: 131.525px; height: 23px;color: grey; font-size:13px;">Billing Month :</td>
+                      <td style="width: 97.475px; height: 23px; font-size:13px;"><strong>12-May-2022</strong></td>
                     </tr>
                     </tbody>
                     </table>
                     </div>
                     <div>
                     
-                      <table class="table table-dark" style="border: 1px solid black; width:100%;">
+                      <table class="table table-dark" style="border-collapse:collapse; width:100%;">
                     <thead>
                     <tr style="background-color: 878493; width: 100px;">
-                      <th style="text-align: left; width: 98px;"><strong>Name</strong></th>
-                      <th style="text-align: right; width: 132.138px;"><strong>Amount(PKR)</strong></th>
+                      <th style="text-align: left; width: 98px; font-size:13px;"><strong>Name</strong></th>
+                      <th style="text-align: right; width: 132.138px; font-size:13px;"><strong>Amount(PKR)</strong></th>
                     </tr>
                     </thead>
                       <tbody>
                         <tr style="border: 1px solid black;">
-                          <td style="text-align: left; border: 1px solid black;">Fee</td>
-                          <td style="text-align: right; border: 1px solid black;">22,270</td>
+                          <td style="text-align: left; border: 1px solid black; font-size:13px;">Fee</td>
+                          <td style="text-align: right; border: 1px solid black; font-size:13px;">22,270</td>
                         </tr>
                         <tr style="border: 1px solid black;">
-                          <td style="text-align: left; border: 1px solid black;">Photograph</td>
-                          <td style="text-align: right; border: 1px solid black;">180</td>
+                          <td style="text-align: left; border: 1px solid black; font-size:13px;">Photograph</td>
+                          <td style="text-align: right; border: 1px solid black; font-size:13px;">180</td>
                         </tr>
                       </tbody>
                     </table>
-                      <table style=" width=1000px;">
-                    <tbody>
-                    <tr style="height: 23px;">
-                      <td style=""><strong>Total Due within Due Date</strong></td>
-                      <td style=" "><strong>22450</strong></td>
-                    
-                    </tr>
-                    </tbody>
-                    </table>
+                      <table class="table table-dark" style="width:100%;">
+                        <thead>
+                        <tr style="width: 100px;">
+                        <th style="text-align: left; width: 98px; font-size:13px; margin-left: 5%;">Total due within due date</th>
+                        <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;">22,450</th>
+                        </tr>
+                        </thead>
+                        
+                          
+                        </table>
+                    <div style=" margin-left: 5%">
+                      <h4 style="font-size:13px;"><u><strong>Late Payment Fine Slab</strong></u></h4>
+                      <h4 style="font-size:13px;">Days After Due Date</h4>
+                    </div>
                       
-                      <br/>
-                      <div>
-                        <td style="font-size: 22px;"><u><strong>Late Payment Fine Slab</strong></u></td>
-                       <br/> <br/>
-                        <strong>Days After Due Date</strong>
-                      </div>
+                     
+                       
                       
-                      <table class="table table-dark" style="border: 1px solid grey; width:100%;">
+                      
+                      
+                      <table class="table table-dark" style="text-align: center; margin-left: 5%; border-collapse:collapse; width:90%;">
                       <thead>
                         <tr>
                           
@@ -285,7 +292,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr style="text-align: center;">
+                        <tr>
                           
                           <td style="border: 1px solid grey; text-align: center;color: grey">1</td>
                           <td style="border: 1px solid grey; text-align: center;color: grey">10</td>
@@ -305,14 +312,15 @@
                         </tr>
                       </tbody>
                     </table>
-                    <h6 style="font-weight: bold; font-size: 14px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
                       <div>
-                        <p style="padding-inline: 20px; margin: 10px 10px 10px 10px;color: grey " >
+                      <h6 style="font-weight: bold; font-size: 13px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
+                      
+                        <p style="padding-inline: 10px; margin: 2px 10px 10px 10px;  font-size: 10px; color: grey;">
                           In case of any query please contact the school office or the
                     LACAS accounts department.
                     The amount can be deposited through Cheque of Bank Alfalah or
                     cash at any branch of Bank Alfalah except Alfalah Islamic
-                    Branch.<br></br>
+                    Branch.<br/>
                     On line payment through ALFA App and Debit/Credit card is also
                     available as per details mentioned on LACAS website.
                     Security is refundable only if one month’s advance notice is given
@@ -324,10 +332,10 @@
                       <table class="table " style="width:100%;">
                         <tbody>
                          <td>   
-                        <SPAN STYLE="text-decoration:overline; text-align: left; font-weight:bold">Bank Officer Sign., Stamp  Date</SPAN>
+                        <SPAN STYLE="text-decoration:overline; text-align: left;  font-size: 13px; font-weight:bold">Bank Officer Sign., Stamp  Date</SPAN>
                       </td>
                       <td>
-                        <SPAN STYLE="text-decoration:overline; text-align: right; font-weight:bold">Sign. Depositor</SPAN> 
+                        <SPAN STYLE="text-decoration:overline; text-align: right;  font-size: 13px; font-weight:bold">Sign. Depositor</SPAN> 
                       </td>
                       </tbody>    
                       </table>
@@ -335,19 +343,19 @@
                     </div>
                     </div>
                     <!--3rd box-->
-                    <div class="column" style="float: left; border: 1px solid black; width: 32%;  height: 100%; margin-right: 0%;">
+                    <div class="column" style="float: left; font-size:0.6rem; border: 1px solid black; width: 32%;  height: 100%; margin-right: 0%;">
                     
                       <table class="table table-dark" style="width:100%;">
                       <tbody>
                     <tr style="height: 65.5px;">
                     <td style="align-items: center; ">
-                    <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script                     ;">La<span style="background: black; color: yellow;">cas</span></h5>
+                    <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
                     </td>
                     <td style="align-items: center; ">
                     <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
                     </td>
                     <td style="">
-                      <img src="/cus_report/static/src/description/logo.png" height="50" width="50"/>
+                      <img src="/cus_report/static/src/description/logo.png" height="50" width="50" style="object-fit: fill;"/>
                     
                     </td>
                     </tr> 
@@ -359,16 +367,16 @@
                       <table class="table table-dark" style="width:100%;">
                     <tbody>
                     <tr>
-                    <td style="text-align: left;color: grey">Bill Number:</td>
-                      <td style=""><strong>294388</strong></td>
+                    <td style="text-align: left;color: grey; font-size:13px;">Bill Number:</td>
+                      <td style="font-size:13px;"><strong>294388</strong></td>
                     </tr>
                     <tr>
-                    <td style="text-align: left;color: grey">Bill Genrated on :</td>
-                      <td style=" "><strong>21-Apr-2022</strong></td>
+                    <td style="text-align: left;color: grey; font-size:13px;">Bill Genrated on :</td>
+                    <td style="font-size:13px;"><strong>21-Apr-2022</strong></td>
                     </tr>
                     <tr>
-                    <td style="text-align: left;color: grey">Due on :</td>
-                      <td><strong>12-May-2022</strong></td>
+                    <td style="text-align: left; color: grey; font-size:13px;">Due on :</td>
+                      <td><span style="background-color: yellow; font-size:13px;"><strong>12-May-2022</strong></span></td>
                     </tr>
                     </tbody>
                     </table>
@@ -379,65 +387,69 @@
                       <table class="table table-dark" style="width:100%;">
                     <tbody>
                     <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Student:</td>
-                      <td style="width: 97.475px; height: 23px;"><strong>Muhammad ESSA</strong></td>
+                    <td style="width: 131.525px; height: 23px;color: grey; font-size:13px;">Student:</td>
+                    <td style="width: 97.475px; height: 23px; font-size:13px;"><strong>Muhammad ESSA</strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Student ID :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>025478</strong></td>
+                    <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Student ID :</td>
+                    <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>025478</strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Class :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>Class 3-C</strong></td>
+                    <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Class :</td>
+                    <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>Class 3-C</strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Branch :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>Johar Town School</strong></td>
+                    <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Branch :</td>
+                      <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>Johar Town School</strong></td>
                     </tr>
                     <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Billing Month :</td>
-                      <td style="width: 97.475px; height: 23px;"><span style="background-color: yellow;"><strong>12-May-2022</strong></span></td>
+                    <td style="width: 131.525px; height: 23px;color: grey; font-size:13px;">Billing Month :</td>
+                      <td style="width: 97.475px; height: 23px; font-size:13px;"><strong>12-May-2022</strong></td>
                     </tr>
                     </tbody>
                     </table>
                     </div>
                     <div>
                     
-                      <table class="table table-dark" style="border: 1px solid black; width:100%;">
+                      <table class="table table-dark" style="border-collapse:collapse; width:100%;">
                     <thead>
                     <tr style="background-color: 878493; width: 100px;">
-                      <th style="text-align: left; width: 98px;"><strong>Name</strong></th>
-                      <th style="text-align: right; width: 132.138px;"><strong>Amount(PKR)</strong></th>
+                      <th style="text-align: left; width: 98px; font-size:13px;"><strong>Name</strong></th>
+                      <th style="text-align: right; width: 132.138px; font-size:13px;"><strong>Amount(PKR)</strong></th>
                     </tr>
                     </thead>
                       <tbody>
                         <tr style="border: 1px solid black;">
-                          <td style="text-align: left; border: 1px solid black;">Fee</td>
-                          <td style="text-align: right; border: 1px solid black;">22,270</td>
+                          <td style="text-align: left; border: 1px solid black; font-size:13px;">Fee</td>
+                          <td style="text-align: right; border: 1px solid black; font-size:13px;">22,270</td>
                         </tr>
                         <tr style="border: 1px solid black;">
-                          <td style="text-align: left; border: 1px solid black;">Photograph</td>
-                          <td style="text-align: right; border: 1px solid black;">180</td>
+                          <td style="text-align: left; border: 1px solid black; font-size:13px;">Photograph</td>
+                          <td style="text-align: right; border: 1px solid black; font-size:13px;">180</td>
                         </tr>
                       </tbody>
                     </table>
-                      <table style=" width=1000px;">
-                    <tbody>
-                    <tr style="height: 23px;">
-                      <td style=""><strong>Total Due within Due Date</strong></td>
-                      <td style=" "><strong>22450</strong></td>
-                    
-                    </tr>
-                    </tbody>
-                    </table>
+                      <table class="table table-dark" style="width:100%;">
+                        <thead>
+                        <tr style="width: 100px;">
+                        <th style="text-align: left; width: 98px; font-size:13px; margin-left: 5%;">Total due within due date</th>
+                        <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;">22,450</th>
+                        </tr>
+                        </thead>
+                        
+                          
+                        </table>
+                    <div style=" margin-left: 5%">
+                      <h4 style="font-size:13px;"><u><strong>Late Payment Fine Slab</strong></u></h4>
+                      <h4 style="font-size:13px;">Days After Due Date</h4>
+                    </div>
                       
-                      <br/>
-                      <div>
-                        <td style="font-size: 22px;"><u><strong>Late Payment Fine Slab</strong></u></td>
-                       <br/> <br/>
-                        <strong>Days After Due Date</strong>
-                      </div>
-                      <table class="table table-dark" style="border: 1px solid grey; width:100%;">
+                     
+                       
+                      
+                      
+                      
+                      <table class="table table-dark" style="text-align: center; margin-left: 5%; border-collapse:collapse; width:90%;">
                       <thead>
                         <tr>
                           
@@ -467,32 +479,33 @@
                         </tr>
                       </tbody>
                     </table>
-                    <h6 style="font-weight: bold; font-size: 15px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
-                    <div>
-                      <p style="padding-inline: 20px; margin: 10px 10px 10px 10px;color: grey " >
-                        In case of any query please contact the school office or the
-                  LACAS accounts department.
-                  The amount can be deposited through Cheque of Bank Alfalah or
-                  cash at any branch of Bank Alfalah except Alfalah Islamic
-                  Branch.<br></br>
-                  On line payment through ALFA App and Debit/Credit card is also
-                  available as per details mentioned on LACAS website.
-                  Security is refundable only if one month’s advance notice is given
-                  in writing or one month’s advance fee is paid. Security is
-                  refundable within 6 months of withdrawal or leaving. For A level
-                  students, security is refundable after completion of A level.
-                      </p>
-                    </div>
-                    <table class="table " style="width:100%;">
-                      <tbody>
-                       <td>   
-                      <SPAN STYLE="text-decoration:overline; text-align: left; font-weight:bold">Bank Officer Sign., Stamp  Date</SPAN>
-                    </td>
-                    <td>
-                      <SPAN STYLE="text-decoration:overline; text-align: right; font-weight:bold">Sign. Depositor</SPAN> 
-                    </td>
-                    </tbody>    
-                    </table>
+                      <div>
+                      <h6 style="font-weight: bold; font-size: 13px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
+                      
+                        <p style="padding-inline: 10px; margin: 2px 10px 10px 10px;  font-size: 10px; color: grey;">
+                          In case of any query please contact the school office or the
+                    LACAS accounts department.
+                    The amount can be deposited through Cheque of Bank Alfalah or
+                    cash at any branch of Bank Alfalah except Alfalah Islamic
+                    Branch.<br/>
+                    On line payment through ALFA App and Debit/Credit card is also
+                    available as per details mentioned on LACAS website.
+                    Security is refundable only if one month’s advance notice is given
+                    in writing or one month’s advance fee is paid. Security is
+                    refundable within 6 months of withdrawal or leaving. For A level
+                    students, security is refundable after completion of A level.
+                        </p>
+                      </div>
+                      <table class="table " style="width:100%;">
+                        <tbody>
+                         <td>   
+                        <SPAN STYLE="text-decoration:overline; text-align: left;  font-size: 13px; font-weight:bold">Bank Officer Sign., Stamp  Date</SPAN>
+                      </td>
+                      <td>
+                        <SPAN STYLE="text-decoration:overline; text-align: right;  font-size: 13px; font-weight:bold">Sign. Depositor</SPAN> 
+                      </td>
+                      </tbody>    
+                      </table>
                       
                     </div>
                     </div>
