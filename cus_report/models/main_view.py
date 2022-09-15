@@ -1,8 +1,8 @@
 # import datetime
 # from re import U
 
-# from odoo import models, fields,api
-# from odoo.exceptions import UserError
+from odoo import models, fields,api
+from odoo.exceptions import UserError
 # import base64
 # import requests
 # import datetime
@@ -23,4 +23,9 @@
 #             },
 #             'target': 'new'
 #         }
-    
+
+
+class inheritincompany(models.Model):
+    _inherit = 'res.company'
+
+    image = fields.Image(string='Bank Image')

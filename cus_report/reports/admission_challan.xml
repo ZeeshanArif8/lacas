@@ -12,13 +12,13 @@
                       <tbody>
                     <tr style="height: 65.5px;">
                     <td style="align-items: center; ">
-                    <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
+                                <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" height="50" width="100"  class="float-left" alt="Logo"/>
                     </td>
                     <td style="align-items: center; ">
                         <p style="text-align: center;font-size 11px; "><strong>LACAS School Network</strong><br/> Admission Challan<br/> BANK ALFALAH LTD. A/C # 0195-1006741420</p>
                     </td>
                     <td style="">
-                      <img src="/cus_report/static/src/description/logo.png" height="50" width="50" style="object-fit: fill;"/>
+                                <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100"  class="float-right" alt="Logo"/>
 
                     </td>
                     </tr>
@@ -49,25 +49,33 @@
 
                       <table class="table table-dark" style="width:100%;">
                     <tbody>
-                    <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Student:</td>
-                    <td style="width: 97.475px; height: 23px;"><strong>HAREEM USMAN D/O USMAN HABIB VIRK</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Registration ID :</td>
-                    <td style="width: 97.475px; height: 26.5px;"><strong>01804220004</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Class :</td>
-                    <td style="width: 97.475px; height: 26.5px;"><strong>RECEPTION</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Branch :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>PRESCHOOL JOHAR TOWN</strong></td>
+                    <tr >
+                    <td style="text-align: left;color: grey">Student:</td>
+                    <td style="padding-left: 120px;"><strong>HAREEM USMAN D/O USMAN HABIB VIRK</strong></td>
                     </tr>
                     <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Billing Month :</td>
-                      <td style="width: 97.475px; height: 23px;"><strong>April-2022</strong></td>
+                    <td style="text-align: left;color: grey">Father Name:</td>
+                    <td style="padding-left: 120px;"><strong>USMAN HABIB VIRK</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Registration ID :</td>
+                    <td style="padding-left: 120px;"><strong>01804220004</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Class :</td>
+                    <td style="padding-left: 120px;"><strong>RECEPTION</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Branch :</td>
+                      <td style="padding-left: 120px;"><strong>PRESCHOOL JOHAR TOWN</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Session :</td>
+                      <td style="padding-left: 120px;"><strong>2022-2023</strong></td>
+                    </tr>
+                    <tr style="height: 23px;">
+                    <td style="text-align: left;color: grey">Billing Month :</td>
+                      <td style="padding-left: 120px;"><strong>April-2022</strong></td>
                     </tr>
                     </tbody>
                     </table>
@@ -92,54 +100,10 @@
                         </tr>
                       </tbody>
                     </table>
-                      <table style=" width=1000px;">
-                    <tbody>
-                    <tr style="height: 23px;">
-                      <td style=""><strong>Total Due within Due Date</strong></td>
-                      <td style=" "><strong>15000</strong></td>
-
-                    </tr>
-                    </tbody>
-                    </table>
-
-                      <div>
-                        <td style="font-size: 22px;"><u><strong>Late Payment Fine Slab</strong></u></td>
-                       <br/>
-                        <strong>Days After Due Date</strong>
-                      </div>
 
 
-                      <table class="table table-dark" style="border: 1px solid grey; width:100%;">
-                      <thead>
-                        <tr>
 
-                          <th style="border: 1px solid grey;" scope="col">From</th>
-                          <th style="border: 1px solid grey;" scope="col">To</th>
-                          <th style="border: 1px solid grey;" scope="col">Rupess</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
 
-                          <td style="border: 1px solid grey; text-align: center;color: grey">1</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">10</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">100</td>
-                        </tr>
-                        <tr>
-
-                          <td style="border: 1px solid grey; text-align: center;color: grey">11</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">20</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">200</td>
-                        </tr>
-                        <tr>
-
-                          <td style="border: 1px solid grey; text-align: center;color: grey">21</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">31</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">500</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                      <h6 style="font-weight: bold; font-size: 14px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
                       <div>
                         <p style="padding-inline: 20px; margin: 10px 10px 10px 10px; color: grey; font-size: 11px; " >
                           1) The admission challan must be paid within the due date.<br/>
@@ -176,13 +140,13 @@
                       <tbody>
                     <tr style="height: 65.5px;">
                     <td style="align-items: center; ">
-                    <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
+                                <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" height="50" width="100"  class="float-left" alt="Logo"/>
                     </td>
                     <td style="align-items: center; ">
                         <p style="text-align: center;font-size 11px; "><strong>LACAS School Network</strong><br/> Admission Challan<br/> BANK ALFALAH LTD. A/C # 0195-1006741420</p>
                     </td>
                     <td style="">
-                      <img src="/cus_report/static/src/description/logo.png" height="50" width="50" style="object-fit: fill;"/>
+                                <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100"  class="float-left" alt="Logo"/>
 
                     </td>
                     </tr>
@@ -191,7 +155,7 @@
                     <hr style="height: 1px; border-width: 0; color: black; background-color: grey;"/>
                     <div>
 
-                      <table class="table table-dark" style="width:100%;">
+                        <table class="table table-dark" style="width:100%;">
                     <tbody>
                     <tr>
                     <td style="text-align: left;color: grey">Bill Number:</td>
@@ -213,25 +177,33 @@
 
                       <table class="table table-dark" style="width:100%;">
                     <tbody>
-                    <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Student:</td>
-                    <td style="width: 97.475px; height: 23px;"><strong>HAREEM USMAN D/O USMAN HABIB VIRK</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Registration ID :</td>
-                    <td style="width: 97.475px; height: 26.5px;"><strong>01804220004</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Class :</td>
-                    <td style="width: 97.475px; height: 26.5px;"><strong>RECEPTION</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Branch :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>PRESCHOOL JOHAR TOWN</strong></td>
+                    <tr >
+                    <td style="text-align: left;color: grey">Student:</td>
+                    <td style="padding-left: 120px;"><strong>HAREEM USMAN D/O USMAN HABIB VIRK</strong></td>
                     </tr>
                     <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Billing Month :</td>
-                      <td style="width: 97.475px; height: 23px;"><strong>April-2022</strong></td>
+                    <td style="text-align: left;color: grey">Father Name:</td>
+                    <td style="padding-left: 120px;"><strong>USMAN HABIB VIRK</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Registration ID :</td>
+                    <td style="padding-left: 120px;"><strong>01804220004</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Class :</td>
+                    <td style="padding-left: 120px;"><strong>RECEPTION</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Branch :</td>
+                      <td style="padding-left: 120px;"><strong>PRESCHOOL JOHAR TOWN</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Session :</td>
+                      <td style="padding-left: 120px;"><strong>2022-2023</strong></td>
+                    </tr>
+                    <tr style="height: 23px;">
+                    <td style="text-align: left;color: grey">Billing Month :</td>
+                      <td style="padding-left: 120px;"><strong>April-2022</strong></td>
                     </tr>
                     </tbody>
                     </table>
@@ -256,54 +228,7 @@
                         </tr>
                       </tbody>
                     </table>
-                      <table style=" width=1000px;">
-                    <tbody>
-                    <tr style="height: 23px;">
-                      <td style=""><strong>Total Due within Due Date</strong></td>
-                      <td style=" "><strong>15000</strong></td>
 
-                    </tr>
-                    </tbody>
-                    </table>
-
-                      <div>
-                        <td style="font-size: 22px;"><u><strong>Late Payment Fine Slab</strong></u></td>
-                       <br/>
-                        <strong>Days After Due Date</strong>
-                      </div>
-
-
-                      <table class="table table-dark" style="border: 1px solid grey; width:100%;">
-                      <thead>
-                        <tr>
-
-                          <th style="border: 1px solid grey;" scope="col">From</th>
-                          <th style="border: 1px solid grey;" scope="col">To</th>
-                          <th style="border: 1px solid grey;" scope="col">Rupess</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-
-                          <td style="border: 1px solid grey; text-align: center;color: grey">1</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">10</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">100</td>
-                        </tr>
-                        <tr>
-
-                          <td style="border: 1px solid grey; text-align: center;color: grey">11</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">20</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">200</td>
-                        </tr>
-                        <tr>
-
-                          <td style="border: 1px solid grey; text-align: center;color: grey">21</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">31</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">500</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                       <h6 style="font-weight: bold; font-size: 14px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
                       <div>
                         <p style="padding-inline: 20px; margin: 10px 10px 10px 10px; color: grey; font-size: 11px; " >
                           1) The admission challan must be paid within the due date.<br/>
@@ -337,13 +262,13 @@
                       <tbody>
                     <tr style="height: 65.5px;">
                     <td style="align-items: center; ">
-                    <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script                     ;">La<span style="background: black; color: yellow;">cas</span></h5>
+                                <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" height="50" width="100"  class="float-left" alt="Logo"/>
                     </td>
                     <td style="align-items: center; ">
                         <p style="text-align: center;font-size 11px; "><strong>LACAS School Network</strong><br/> Admission Challan<br/> BANK ALFALAH LTD. A/C # 0195-1006741420</p>
                     </td>
                     <td style="">
-                      <img src="/cus_report/static/src/description/logo.png" height="50" width="50"/>
+                                <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100"  class="float-left" alt="Logo"/>
 
                     </td>
                     </tr>
@@ -352,7 +277,7 @@
                     <hr style="height: 1px; border-width: 0; color: black; background-color: grey;"/>
                     <div>
 
-                      <table class="table table-dark" style="width:100%;">
+                        <table class="table table-dark" style="width:100%;">
                     <tbody>
                     <tr>
                     <td style="text-align: left;color: grey">Bill Number:</td>
@@ -360,11 +285,11 @@
                     </tr>
                     <tr>
                     <td style="text-align: left;color: grey">Issue Date :</td>
-                      <td style=" "><strong>18 APR 2022</strong></td>
+                    <td style=" "><strong>18 APR 2022</strong></td>
                     </tr>
                     <tr>
-                    <td style="text-align: left;color: grey">Due Date :</td>
-                        <td><span style="background-color: yellow;"><strong>22 APR 2022</strong></span></td>
+                    <td style="text-align: left; color: grey">Due Date :</td>
+                      <td><span style="background-color: yellow;"><strong>22 APR 2022</strong></span></td>
                     </tr>
                     </tbody>
                     </table>
@@ -374,25 +299,33 @@
 
                       <table class="table table-dark" style="width:100%;">
                     <tbody>
-                    <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Student:</td>
-                      <td style="width: 97.475px; height: 23px;"><strong>HAREEM USMAN D/O USMAN HABIB VIRK</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Registration ID :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>001804220004</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Class :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>RECEPTION</strong></td>
-                    </tr>
-                    <tr style="height: 26.5px;">
-                    <td style="width: 131.525px; height: 26.5px;color: grey">Branch :</td>
-                      <td style="width: 97.475px; height: 26.5px;"><strong>PRESCHOOL JOHAR TOWN</strong></td>
+                    <tr >
+                    <td style="text-align: left;color: grey">Student:</td>
+                    <td style="padding-left: 120px;"><strong>HAREEM USMAN D/O USMAN HABIB VIRK</strong></td>
                     </tr>
                     <tr style="height: 23px;">
-                    <td style="width: 131.525px; height: 23px;color: grey">Billing Month :</td>
-                      <td style="width: 97.475px; height: 23px;"><strong>April-2022</strong></td>
+                    <td style="text-align: left;color: grey">Father Name:</td>
+                    <td style="padding-left: 120px;"><strong>USMAN HABIB VIRK</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Registration ID :</td>
+                    <td style="padding-left: 120px;"><strong>01804220004</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Class :</td>
+                    <td style="padding-left: 120px;"><strong>RECEPTION</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Branch :</td>
+                      <td style="padding-left: 120px;"><strong>PRESCHOOL JOHAR TOWN</strong></td>
+                    </tr>
+                    <tr style="height: 26.5px;">
+                    <td style="text-align: left;color: grey">Session :</td>
+                      <td style="padding-left: 120px;"><strong>2022-2023</strong></td>
+                    </tr>
+                    <tr style="height: 23px;">
+                    <td style="text-align: left;color: grey">Billing Month :</td>
+                      <td style="padding-left: 120px;"><strong>April-2022</strong></td>
                     </tr>
                     </tbody>
                     </table>
@@ -417,53 +350,7 @@
                         </tr>
                       </tbody>
                     </table>
-                      <table style=" width=1000px;">
-                    <tbody>
-                    <tr style="height: 23px;">
-                      <td style=""><strong>Total Due within Due Date</strong></td>
-                      <td style=" "><strong>15000</strong></td>
 
-                    </tr>
-                    </tbody>
-                    </table>
-
-
-                      <div>
-                        <td style="font-size: 22px;"><u><strong>Late Payment Fine Slab</strong></u></td>
-                        <br/>
-                        <strong>Days After Due Date</strong>
-                      </div>
-                      <table class="table table-dark" style="border: 1px solid grey; width:100%;">
-                      <thead>
-                        <tr>
-
-                          <th style="border: 1px solid grey;" scope="col">From</th>
-                          <th style="border: 1px solid grey;" scope="col">To</th>
-                          <th style="border: 1px solid grey;" scope="col">Rupess</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-
-                          <td style="border: 1px solid grey; text-align: center;color: grey">1</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">10</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">100</td>
-                        </tr>
-                        <tr>
-
-                          <td style="border: 1px solid grey; text-align: center;color: grey">11</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">20</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">200</td>
-                        </tr>
-                        <tr>
-
-                          <td style="border: 1px solid grey; text-align: center;color: grey">21</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">31</td>
-                          <td style="border: 1px solid grey; text-align: center;color: grey">500</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                     <h6 style="font-weight: bold; font-size: 14px; margin-right: 10px;">For every subsequent 10 days add Rs500</h6>
                       <div>
                         <p style="padding-inline: 20px; margin: 10px 10px 10px 10px; color: grey; font-size: 11px; " >
                           1) The admission challan must be paid within the due date.<br/>
