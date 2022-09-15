@@ -21,22 +21,14 @@
     <report 
     id = "generate_report"
     model = "account.move"
-    string = "Generate Report"
+    string = "Fee Challan"
     name = "cus_report.report_post_view"
     file = "cus_report.report_post"
     report_type="qweb-pdf"
     paperformat="cus_report.report_post_view_paper"
     
     />
-
-   <report
-            id="report_admission_challan"
-            model="account.move"
-            report_type="qweb-pdf"
-            string="Admission Challan"
-            name="cus_report.admission_challan"
-            file="cus_report.admission_challan"
-            paperformat="cus_report.report_post_view_paper"
-        />
+    
+   
 
 </odoo>
