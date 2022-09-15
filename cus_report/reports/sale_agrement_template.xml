@@ -188,10 +188,10 @@
                   <td style="align-items: center; ">
                               <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" height="50" width="100"  class="float-left" alt="Logo"/>
                   </td>
-                  <td style="align-items: center; ">
+                  <td style="align-items: center;font-size: 10px;">
                   <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
                   </td>
-                  <td style="">
+                  <td style=" ">
                               <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100"  class="float-left" alt="Logo"/>
                   
                   </td>
@@ -359,10 +359,10 @@
                   <td style="align-items: center; ">
                               <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" height="50" width="100"  class="float-left" alt="Logo"/>
                   </td>
-                  <td style="align-items: center; ">
+                  <td style="align-items: center;font-size: 10px;">
                   <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
                   </td>
-                  <td style="">
+                  <td style=" ">
                               <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100"  class="float-left" alt="Logo"/>
                   
                   </td>
