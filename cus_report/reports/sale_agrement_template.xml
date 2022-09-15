@@ -12,13 +12,13 @@
                     <tbody>
                   <tr style="height: 65.5px;">
                   <td style="align-items: center; ">
-                  <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
+                              <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" height="50" width="100"  class="float-left" alt="Logo"/>
                   </td>
-                  <td style="align-items: center; ">
+                  <td style="align-items: center;font-size: 10px;">
                   <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
                   </td>
-                  <td style="">
-                    <img src="/cus_report/static/src/description/logo.png" height="50" width="50" style="object-fit: fill;"/>
+                  <td style=" ">
+                              <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100"  class="float-left" alt="Logo"/>
                   
                   </td>
                   </tr> 
@@ -186,13 +186,13 @@
                     <tbody>
                   <tr style="height: 65.5px;">
                   <td style="align-items: center; ">
-                  <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
+                              <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" height="50" width="100"  class="float-left" alt="Logo"/>
                   </td>
                   <td style="align-items: center; ">
                   <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
                   </td>
                   <td style="">
-                    <img src="/cus_report/static/src/description/logo.png" height="50" width="50" style="object-fit: fill;"/>
+                              <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100"  class="float-left" alt="Logo"/>
                   
                   </td>
                   </tr> 
@@ -357,13 +357,13 @@
                     <tbody>
                   <tr style="height: 65.5px;">
                   <td style="align-items: center; ">
-                  <h5 style="border: 1px solid red; font-size:20px; font-family:Brush Script;">La<span style="background: black; color: yellow;">cas</span></h5>
+                              <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" height="50" width="100"  class="float-left" alt="Logo"/>
                   </td>
                   <td style="align-items: center; ">
                   <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
                   </td>
                   <td style="">
-                    <img src="/cus_report/static/src/description/logo.png" height="50" width="50" style="object-fit: fill;"/>
+                              <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100"  class="float-left" alt="Logo"/>
                   
                   </td>
                   </tr> 
