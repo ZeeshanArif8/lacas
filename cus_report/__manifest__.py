@@ -18,6 +18,7 @@
         'views/main_view.xml',
         'reports/sale_agrement.xml',
         'reports/sale_agrement_template.xml',
+        'reports/admission_challan.xml',
     ],
     "images": [ ],
     "auto_install": False,
