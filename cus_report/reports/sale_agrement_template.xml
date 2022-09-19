@@ -17,7 +17,7 @@
                   <td style="align-items: center;font-size: 10px;">
                   <p style="text-align: center; "><strong>LACAS School Network</strong><br/> Through Alfalah Transact<br/> Only</p>
                   </td>
-                  <td style=" ">
+                  <td style="">
                               <img t-if="o.company_id.image" t-att-src="image_data_uri(o.company_id.image)" height="50" width="100" class="float-left" alt="Logo"/>
                   
                   </td>
@@ -31,15 +31,15 @@
                   <tbody>
                   <tr>
                   <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Bill Number:</td>
-                    <td style="font-size:13px; width: 70%;"><strong>294388</strong></td>
+                    <td style="font-size:13px; width: 70%;"><strong><t t-esc="o.name"/></strong></td>
                   </tr>
                   <tr>
                   <td style="text-align: left;color: grey; font-size:13px;">Bill Genrated on :</td>
-                  <td style="font-size:13px;"><strong>21-Apr-2022</strong></td>
+                  <td style="font-size:13px;"><strong><t t-esc="o.invoice_date"/></strong></td>
                   </tr>
                   <tr>
                   <td style="text-align: left; color: grey; font-size:13px;">Due on :</td>
-                    <td><span style="background-color: yellow; font-size:13px;"><strong>12-May-2022</strong></span></td>
+                    <td><span style="background-color: yellow; font-size:13px;"><strong><t t-esc="o.invoice_date_due"/></strong></span></td>
                   </tr>
                   </tbody>
                   </table>
@@ -51,23 +51,23 @@
                   <tbody>
                   <tr style="height: 23px;">
                   <td style="width: 30%; height: 23px;color: grey; font-size:13px;">Student:</td>
-                  <td style="width: 70%; height: 23px; font-size:13px;"><strong>Muhammad ESSA khan sign chuhan</strong></td>
+                  <td style="width: 70%; height: 23px; font-size:13px;"><strong><t t-esc="o.partner_id.name"/></strong></td>
                   </tr>
                   <tr style="height: 26.5px;">
                   <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Student ID :</td>
-                  <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>025478</strong></td>
+                  <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong><t t-esc="o.Registration_id"/></strong></td>
                   </tr>
                   <tr style="height: 26.5px;">
                   <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Class :</td>
-                  <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>Class 3-C</strong></td>
+                  <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong><t t-esc="o.room"/></strong></td>
                   </tr>
                   <tr style="height: 26.5px;">
                   <td style="width: 131.525px; height: 26.5px;color: grey; font-size:13px;">Branch :</td>
-                    <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong>Johar Town School</strong></td>
+                    <td style="width: 97.475px; height: 26.5px; font-size:13px;"><strong><t t-esc="o.partner_shipping_id.street"/></strong></td>
                   </tr>
                   <tr style="height: 23px;">
                   <td style="width: 131.525px; height: 23px;color: grey; font-size:13px;">Billing Month :</td>
-                    <td style="width: 97.475px; height: 23px; font-size:13px;"><strong>12-May-2022</strong></td>
+                    <td style="width: 97.475px; height: 23px; font-size:13px;"><strong><t t-esc="o.invoice_date"/></strong></td>
                   </tr>
                   </tbody>
                   </table>
@@ -84,11 +84,11 @@
                     <tbody>
                       <tr style="border: 1px solid black;">
                         <td style="text-align: left; border: 1px solid black; font-size:13px;">Fee</td>
-                        <td style="text-align: right; border: 1px solid black; font-size:13px;">22,270</td>
+                        <td style="text-align: right; border: 1px solid black; font-size:13px;"><t t-esc="o.amount_total"/></td>
                       </tr>
                       <tr style="border: 1px solid black;">
                         <td style="text-align: left; border: 1px solid black; font-size:13px;">Photograph</td>
-                        <td style="text-align: right; border: 1px solid black; font-size:13px;">180</td>
+                        <td style="text-align: right; border: 1px solid black; font-size:13px;"><t t-esc="o.photograph_charges"/></td>
                       </tr>
                     </tbody>
                   </table>
@@ -96,7 +96,7 @@
                       <thead>
                       <tr style="width: 100px;">
                       <th style="text-align: left; width: 98px; font-size:13px; margin-left: 5%;">Total due within due date</th>
-                      <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;">22,450</th>
+                      <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;"><t t-esc="o.amount_residual"/></th>
                       </tr>
                       </thead>
                       
