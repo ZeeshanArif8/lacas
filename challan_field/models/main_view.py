@@ -4,13 +4,13 @@ from odoo.exceptions import UserError
 class account_fields(models.Model):
     _inherit = "account.move"
     room  = fields.Char("Class")
-    branch = fields.Char("Branch")
+    
      
     
     photograph_charges = fields.Char("Photograph Charges")
     student_security = fields.Char("Student Security")
     admission_fee = fields.Char("Admission Fee")
     father_name = fields.Char("Father Name")  
-    start_session = fields.Date("Start Session")
-    end_session = fields.Date("End Session")
+    start_session = fields.Date("Start Session", required=True)
+    end_session = fields.Date("End Session", required=True)
     Registration_id = fields.Char("Registration ID")
