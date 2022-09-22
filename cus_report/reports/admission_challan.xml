@@ -2,7 +2,7 @@
     <data>
 
         <template id="cus_report.admission_challan">
-            <t t-call="web.html_container">
+            <t t-call="web.html_container"> 
                 <t t-foreach="docs" t-as="o">
                   <div class="row" style="">
 
@@ -107,7 +107,7 @@ LTD. A/C # 0195-
                     <thead>
                     <tr style="width: 100px;">
                     <th style="text-align: left; width: 98px; font-size:13px; margin-left: 5%;">Total </th>
-                    <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;"><t t-esc="o.amount_residual"/></th>
+                    <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;"><t t-esc="int(o.amount_residual)"/></th>
                     </tr>
                     </thead>
                     </table>
@@ -245,7 +245,7 @@ LTD. A/C # 0195-
                     <thead>
                     <tr style="width: 100px;">
                     <th style="text-align: left; width: 98px; font-size:13px; margin-left: 5%;">Total</th>
-                    <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;"><t t-esc="o.amount_residual"/></th>
+                    <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;"><t t-esc="int(o.amount_residual)"/></th>
                     </tr>
                     </thead>
                     </table>
@@ -380,7 +380,7 @@ LTD. A/C # 0195-
                     <thead>
                     <tr style="width: 100px;">
                     <th style="text-align: left; width: 98px; font-size:13px; margin-left: 5%;">Total</th>
-                    <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;"><t t-esc="o.amount_residual"/></th>
+                    <th style="text-align: right; width: 132.138px; font-size:13px; margin-right: 5%;"><t t-esc="int(o.amount_residual)"/></th>
                     </tr>
                     </thead>
                     </table>
