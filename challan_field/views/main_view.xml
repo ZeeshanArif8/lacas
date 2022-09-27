@@ -8,7 +8,7 @@
             <field name="inherit_id" ref="account_edi.view_move_form_inherit"/>
             <field name="arch" type="xml">
                 <xpath expr="//page[@id='edi_documents']" position="after">
-                    <page name="extra_info" string="Extra Information">
+                    <page name="extra_info" string="Extra Information" attrs="{'invisible': [('move_type', 'in', ['entry','out_refund','in_invoice','in_refund'])], 'required': [('move_type', '=', 'out_invoice')]}">
                         <group>
                             <group>
                         <field name="father_name"/>
