@@ -70,7 +70,7 @@ LTD. A/C # 0195-
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Branch :</td>
-                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.journal_id.company_id.name"/></strong></td>
+                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.school_ids.name"/></strong></td>
                     </tr>
                     <t t-if="o.start_session">
                     <tr style="height: 26.5px;">
@@ -222,7 +222,7 @@ LTD. A/C # 0195-
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Branch :</td>
-                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.journal_id.company_id.name"/></strong></td>
+                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.school_ids.name"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Session :</td>
@@ -370,7 +370,7 @@ LTD. A/C # 0195-
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Branch :</td>
-                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.journal_id.company_id.name"/></strong></td>
+                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.school_ids.name"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Session :</td>
