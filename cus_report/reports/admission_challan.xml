@@ -54,11 +54,11 @@ LTD. A/C # 0195-
                     <tbody>
                     <tr>
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Student:</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.partner_id.name"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.name"/></strong></td>
                     </tr>
                     <tr style="height: 23px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Father Name:</td>
-                    <td style=" width: 70%; font-size:13px;"><strong><t t-esc="o.father_name"/></strong></td>
+                    <td style=" width: 70%; font-size:13px;"><strong><t t-esc="o.family_id.name"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
