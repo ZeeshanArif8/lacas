@@ -58,7 +58,7 @@ LTD. A/C # 0195-
                     </tr>
                     <tr style="height: 23px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Father Name:</td>
-                    <td style=" width: 70%; font-size:13px;"><strong><t t-esc="o.family_id.name"/></strong></td>
+                    <td style=" width: 70%; font-size:13px;"><t t-foreach="o.student_ids" t-as="i"<t t-foreach="i.relationship_ids" t-as="d"<strong><t t-esc="d.relationship_type_id.name"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
@@ -127,6 +127,8 @@ LTD. A/C # 0195-
                         <!--</p>-->
                       </div>
                     <br/><br/>
+                    <br/><br/>
+
                        <table class="table " style="width:100%; padding-top: 7%;">
                       <tbody>
                        <td style="width:50%"> 
@@ -274,6 +276,7 @@ LTD. A/C # 0195-
                         <!--</p>-->
                       </div>
                     <br/><br/>
+                    <br/><br/>
                        <table class="table " style="width:100%; padding-top: 7%;">
                       <tbody>
                        <td style="width:50%"> 
@@ -418,6 +421,7 @@ LTD. A/C # 0195-
   </ol>
                         <!--</p>-->
                       </div>
+                    <br/><br/>
                     <br/><br/>
                        <table class="table " style="width:100%; padding-top: 7%;">
                       <tbody>
