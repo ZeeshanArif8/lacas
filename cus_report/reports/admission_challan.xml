@@ -56,10 +56,24 @@ LTD. A/C # 0195-
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Student:</td>
                     <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.name"/></strong></td>
                     </tr>
+                    <!--start-->
                     <tr style="height: 23px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Father Name:</td>
-                    <td style=" width: 70%; font-size:13px;"><t t-foreach="o.student_ids" t-as="i"<t t-foreach="i.relationship_ids" t-as="d"<strong><t t-esc="d.relationship_type_id.name"/></strong></td>
+                    <t t-foreach="o.student_ids" t-as="i">
+                    <t t-foreach="i.relationship_ids" t-as="d">
+                     <!--<t-if "d.type.name" == 'father'> t-as="d" -->
+                     <t t-if="d.relationship_type_id.name == 'Father'">
+                       
+                     <td><t t-esc="d.individual_id.name"/></td>
+                    </t>
+                    <t t-else="">
+                        <td><strong></strong></td>
+                    </t>
+                    <!--<td style=" width: 70%; font-size:13px;"><strong><t t-esc="o.family_id.name"/></strong></td>-->
+                    </t>
+                    </t>
                     </tr>
+                    <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
                     <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
@@ -207,10 +221,24 @@ LTD. A/C # 0195-
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Student:</td>
                     <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.name"/></strong></td>
                     </tr>
+                    <!--start-->
                     <tr style="height: 23px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Father Name:</td>
-                    <td style=" width: 70%; font-size:13px;"><strong><t t-esc="o.family_id.name"/></strong></td>
+                    <t t-foreach="o.student_ids" t-as="i">
+                    <t t-foreach="i.relationship_ids" t-as="d">
+                     <!--<t-if "d.type.name" == 'father'> t-as="d" -->
+                     <t t-if="d.relationship_type_id.name == 'Father'">
+                       
+                     <td><t t-esc="d.individual_id.name"/></td>
+                    </t>
+                    <t t-else="">
+                        <td><strong></strong></td>
+                    </t>
+                    <!--<td style=" width: 70%; font-size:13px;"><strong><t t-esc="o.family_id.name"/></strong></td>-->
+                    </t>
+                    </t>
                     </tr>
+                    <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
                     <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
@@ -352,11 +380,26 @@ LTD. A/C # 0195-
                     <tr>
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Student:</td>
                     <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.name"/></strong></td>
+                    
                     </tr>
+                    <!--start-->
                     <tr style="height: 23px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Father Name:</td>
-                    <td style=" width: 70%; font-size:13px;"><strong><t t-esc="o.family_id.name"/></strong></td>
+                    <t t-foreach="o.student_ids" t-as="i">
+                    <t t-foreach="i.relationship_ids" t-as="d">
+                     <!--<t-if "d.type.name" == 'father'> t-as="d" -->
+                     <t t-if="d.relationship_type_id.name == 'Father'">
+                       
+                     <td><t t-esc="d.individual_id.name"/></td>
+                    </t>
+                    <t t-else="">
+                        <td><strong></strong></td>
+                    </t>
+                    <!--<td style=" width: 70%; font-size:13px;"><strong><t t-esc="o.family_id.name"/></strong></td>-->
+                    </t>
+                    </t>
                     </tr>
+                    <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
                     <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
