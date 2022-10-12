@@ -38,11 +38,11 @@ LTD. A/C # 0195-
                     </tr>
                     <tr>
                     <td style="text-align: left;color: grey; font-size:13px; width: 30%;">Issue Date :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date.strftime('%d/%m/%Y')"/></strong></td>
                     </tr>
                     <tr>
                     <td style="text-align: left; color: grey; font-size:13px; width: 30%;">Due Date :</td>
-                      <td><span style="background-color: yellow; width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date_due"/></strong></span></td>
+                      <td><span style="background-color: yellow; width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date_due.strftime('%d/%m/%Y')"/></strong></span></td>
                     </tr>
                     </tbody>
                     </table>
@@ -80,7 +80,7 @@ LTD. A/C # 0195-
                   </t>
                     <tr style="height: 23px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Billing Month :</td>
-                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date"/></strong></td>
+                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date.strftime('%d/%m/%Y')"/></strong></td>
                     </tr>
                     </tbody>
                     </table>
@@ -190,11 +190,11 @@ LTD. A/C # 0195-
                     </tr>
                     <tr>
                     <td style="text-align: left;color: grey; font-size:13px; width: 30%;">Issue Date :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date.strftime('%d/%m/%Y')"/></strong></td>
                     </tr>
                     <tr>
                     <td style="text-align: left; color: grey; font-size:13px; width: 30%;">Due Date :</td>
-                      <td><span style="background-color: yellow; width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date_due"/></strong></span></td>
+                      <td><span style="background-color: yellow; width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date_due.strftime('%d/%m/%Y')"/></strong></span></td>
                     </tr>
                     </tbody>
                     </table>
@@ -230,7 +230,7 @@ LTD. A/C # 0195-
                     </tr>
                     <tr style="height: 23px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Billing Month :</td>
-                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date"/></strong></td>
+                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date.strftime('%d/%m/%Y')"/></strong></td>
                     </tr>
                     </tbody>
                     </table>
@@ -338,11 +338,11 @@ LTD. A/C # 0195-
                     </tr>
                     <tr>
                     <td style="text-align: left;color: grey; font-size:13px; width: 30%;">Issue Date :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date.strftime('%d/%m/%Y')"/></strong></td>
                     </tr>
                     <tr>
                     <td style="text-align: left; color: grey; font-size:13px; width: 30%;">Due Date :</td>
-                      <td><span style="background-color: yellow; width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date_due"/></strong></span></td>
+                      <td><span style="background-color: yellow; width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date_due.strftime('%d/%m/%Y')"/></strong></span></td>
                     </tr>
                     </tbody>
                     </table>
@@ -378,7 +378,7 @@ LTD. A/C # 0195-
                     </tr>
                     <tr style="height: 23px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Billing Month :</td>
-                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date"/></strong></td>
+                      <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.invoice_date.strftime('%d/%m/%Y')"/></strong></td>
                     </tr>
                     </tbody>
                     </table>
