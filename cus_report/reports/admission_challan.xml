@@ -76,7 +76,7 @@ LTD. A/C # 0195-
                     <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.school_udid"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Class :</td>
@@ -143,7 +143,7 @@ LTD. A/C # 0195-
   </ol>
                         <!--</p>-->
                       </div>
-                    <br/><br/>
+                    
                     <br/><br/>
 
                        <table class="table " style="width:100%; padding-top: 7%;">
@@ -244,7 +244,7 @@ LTD. A/C # 0195-
                     <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.school_udid"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Class :</td>
@@ -309,7 +309,7 @@ LTD. A/C # 0195-
   </ol>
                         <!--</p>-->
                       </div>
-                    <br/><br/>
+                    
                     <br/><br/>
                        <table class="table " style="width:100%; padding-top: 7%;">
                       <tbody>
@@ -408,7 +408,7 @@ LTD. A/C # 0195-
                     <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.school_udid"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Class :</td>
@@ -473,7 +473,7 @@ LTD. A/C # 0195-
   </ol>
                         <!--</p>-->
                       </div>
-                    <br/><br/>
+                    
                     <br/><br/>
                        <table class="table " style="width:100%; padding-top: 7%;">
                       <tbody>
