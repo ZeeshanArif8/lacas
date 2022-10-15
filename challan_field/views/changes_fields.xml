@@ -36,9 +36,9 @@
                 <xpath expr="//label[@for='partner_id']" position="attributes">
                       <attribute name="string">Student</attribute>
                  </xpath>
-                 <xpath expr="//label[@for='partner_shipping_id']" position="attributes">
+                 <!-- <xpath expr="//label[@for='partner_shipping_id']" position="attributes">
                       <attribute name="string">Address</attribute>
-                 </xpath>
+                 </xpath> -->
                  <xpath expr="//label[@for='invoice_date']" position="attributes">
                       <attribute name="string">Challan Date</attribute>
                  </xpath>
