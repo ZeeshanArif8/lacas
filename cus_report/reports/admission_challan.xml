@@ -76,7 +76,7 @@ LTD. A/C # 0195-
                     <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.school_udid"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Class :</td>
@@ -106,6 +106,7 @@ LTD. A/C # 0195-
                   <tr style="background-color: 878493; width: 100px;">
                     <th style="text-align: left; width: 98px; font-size:13px;"><strong>Name</strong></th>
                     <th style="text-align: right; width: 132.138px; font-size:13px;"><strong>Amount(PKR)</strong></th>
+                    <th style="text-align: right; width: 132.138px; font-size:13px;"><strong>Subtotal</strong></th>
                   </tr>
                   </thead>
                     <tbody>
@@ -113,6 +114,7 @@ LTD. A/C # 0195-
                       <tr style="border: 1px solid black;">
                         <td style="text-align: left; border: 1px solid black; font-size:13px;"><t t-esc="d.product_id.name"/></td>
                         <td style="text-align: right; border: 1px solid black; font-size:13px;"><t t-esc="int(d.price_unit)"/></td>
+                        <td style="text-align: right; border: 1px solid black; font-size:13px;"><t t-esc="int(d.price_subtotal)"/></td>
                       </tr>
                      
                     </t>
@@ -244,7 +246,7 @@ LTD. A/C # 0195-
                     <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.school_udid"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Class :</td>
@@ -272,6 +274,7 @@ LTD. A/C # 0195-
                   <tr style="background-color: 878493; width: 100px;">
                     <th style="text-align: left; width: 98px; font-size:13px;"><strong>Name</strong></th>
                     <th style="text-align: right; width: 132.138px; font-size:13px;"><strong>Amount(PKR)</strong></th>
+                    <th style="text-align: right; width: 132.138px; font-size:13px;"><strong>Subtotal</strong></th>
                   </tr>
                   </thead>
                     <tbody>
@@ -279,6 +282,7 @@ LTD. A/C # 0195-
                       <tr style="border: 1px solid black;">
                         <td style="text-align: left; border: 1px solid black; font-size:13px;"><t t-esc="d.product_id.name"/></td>
                         <td style="text-align: right; border: 1px solid black; font-size:13px;"><t t-esc="int(d.price_unit)"/></td>
+                        <td style="text-align: right; border: 1px solid black; font-size:13px;"><t t-esc="int(d.price_subtotal)"/></td>
                       </tr>
                      
                     </t>
@@ -408,7 +412,7 @@ LTD. A/C # 0195-
                     <!--end-->
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Registration ID :</td>
-                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.school_udid"/></strong></td>
+                    <td style="width: 70%; font-size:13px;"><strong><t t-esc="o.student_ids.facts_id"/></strong></td>
                     </tr>
                     <tr style="height: 26.5px;">
                     <td style="text-align: left;color: grey; width: 30%; font-size:13px;">Class :</td>
@@ -436,6 +440,7 @@ LTD. A/C # 0195-
                   <tr style="background-color: 878493; width: 100px;">
                     <th style="text-align: left; width: 98px; font-size:13px;"><strong>Name</strong></th>
                     <th style="text-align: right; width: 132.138px; font-size:13px;"><strong>Amount(PKR)</strong></th>
+                    <th style="text-align: right; width: 132.138px; font-size:13px;"><strong>Subtotal</strong></th>
                   </tr>
                   </thead>
                     <tbody>
@@ -443,6 +448,7 @@ LTD. A/C # 0195-
                       <tr style="border: 1px solid black;">
                         <td style="text-align: left; border: 1px solid black; font-size:13px;"><t t-esc="d.product_id.name"/></td>
                         <td style="text-align: right; border: 1px solid black; font-size:13px;"><t t-esc="int(d.price_unit)"/></td>
+                        <td style="text-align: right; border: 1px solid black; font-size:13px;"><t t-esc="int(d.price_subtotal)"/></td>
                       </tr>
                      
                     </t>
