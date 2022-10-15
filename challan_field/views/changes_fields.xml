@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="product_field_invisible_account_list" model="ir.ui.view" >
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='default_code']" position="attributes">
+                       <attribute name="invisible">True</attribute>
+                 </xpath>         
+            </field>
+        </record>
+
+    <record id="product_field_invisible_account_products" model="ir.ui.view">
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="account.product_template_view_tree"/>
+            <field name="arch" type="xml">
+                  <xpath expr="//field[@name='default_code']" position="attributes">
+                       <attribute name="invisible">True</attribute>
+                 </xpath>
+                 <xpath expr="//field[@name='taxes_id']" position="attributes">
+                       <attribute name="invisible">True</attribute>
+                 </xpath>
+                 <xpath expr="//field[@name='supplier_taxes_id']" position="attributes">
+                       <attribute name="invisible">True</attribute>
+                 </xpath>
+            </field>
+        </record>
+    
+    <record id="customer_field_invoice" model="ir.ui.view">
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="//label[@for='partner_id']" position="attributes">
+                      <attribute name="string">Student</attribute>
+                 </xpath>
+                 <xpath expr="//label[@for='partner_shipping_id']" position="attributes">
+                      <attribute name="string">Address</attribute>
+                 </xpath>
+                 <xpath expr="//label[@for='invoice_date']" position="attributes">
+                      <attribute name="string">Challan Date</attribute>
+                 </xpath>
+
+                 <xpath expr="//field[@name='payment_reference']" position="attributes">
+                       <attribute name="invisible">True</attribute>
+                 </xpath>
+                 <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='product_id']" position="attributes">                              
+                    <attribute name="string">Charge</attribute>     
+                </xpath>
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='name']" position="attributes">                              
+                    <attribute name="string">Description</attribute>     
+                </xpath>
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='price_unit']" position="attributes">                              
+                    <attribute name="string">Amount</attribute>     
+                </xpath>
+
+                 <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='quantity']" position="attributes">                              
+                    <attribute name="optional">hide</attribute>     
+                </xpath>
+
+                 <xpath expr="//field[@name='narration']" position="after">                              
+                    <group  class="oe_invoice_lines_tab">
+
+                        <p>select or type discount reason</p>
+                        <group colspan="10">
+                        <field name="discount_note" />
+                        </group>
+                        
+                        <group colspan="10">
+                        <field name="reject_reason" /> 
+                        </group>
+                        
+                       
+                    </group>   
+                </xpath>
+
+
+            </field>
+        </record>
+
+
+         <record id="edi_removal_inherit" model="ir.ui.view" >
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account_edi.view_move_form_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@id='edi_documents']" position="attributes">
+                     <attribute name="invisible">True</attribute>
+                </xpath>         
+            </field>
+        </record>
+
+       <record id="account.menu_finance_receivables" model="ir.ui.menu" >
+              <field name="name">Billing</field>
+        </record>
+  
+
+         <menuitem id="account.menu_finance_payables" active='False' >
+        </menuitem>
+
+        <record id="account.menu_action_move_out_invoice_type" model="ir.ui.menu" >
+            <field name="name">Student Bills</field>
+        </record>
+
+        <record id="account.menu_action_move_out_refund_type" model="ir.ui.menu" >
+            <field name="name">Reversals</field>
+        </record>
+
+
+        <record id="account.product_product_menu_sellable" model="ir.ui.menu" >
+            <field name="name">Transaction Head</field>
+        </record>
+
+        <record id="account.menu_account_customer" model="ir.ui.menu" >
+            <field name="name">Students</field>
+        </record>
+
+        
+<!--     
+    <record id="product_field_invisible_account_list" model="ir.ui.view">
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='default_code']" position="attributes">
+                       <attribute name="default_code" invisible="context.get('default_code')"> False</attribute>
+                 </xpath>     
+            </field>
+        </record> -->
+</odoo>
