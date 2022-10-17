@@ -81,9 +81,7 @@
                     <attribute name="optional">hide</attribute>     
                 </xpath>
 
-                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='student_id']" position="attributes">                              
-                    <attribute name="optional">hide</attribute>     
-                </xpath>
+                
 
                  <xpath expr="//field[@name='narration']" position="after">                              
                     <group  class="oe_invoice_lines_tab">
