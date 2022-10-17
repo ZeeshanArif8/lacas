@@ -136,8 +136,8 @@
 
         <!--action view-->
 
-        <record id="account.view_out_credit_note_tree" model="ir.ui.menu" >
-             <field name="name">Reversals</field>
+        <record id="account.action_move_out_refund_type" model="ir.actions.act_window" >
+            <field name="name">Reversals</field>
         </record>
 
 
