@@ -28,7 +28,7 @@
             </field>
         </record>
 
-        <record id="delivery_Address_name" model="ir.ui.view">
+        <!-- <record id="delivery_Address_name" model="ir.ui.view">
             <field name="model">account.move</field>
             <field name="inherit_id" ref="sale.account_invoice_form"/>
             <field name="arch" type="xml">
@@ -36,7 +36,7 @@
                       <attribute name="string">Address</attribute>
                  </xpath>       
             </field>
-        </record>
+        </record> -->
 
         <record id="family_name_change" model="ir.ui.view">
             <field name="model">account.move</field>
