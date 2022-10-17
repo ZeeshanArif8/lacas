@@ -168,7 +168,7 @@
             <field name="inherit_id" ref="edoob.school_student_view_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='last_name']" position="after">
-                       <field name="HomeRoom"/>
+                       <field name="Home_room"/>
                  </xpath>     
             </field>
         </record>
