@@ -38,7 +38,7 @@
             </field>
         </record> -->
 
-        <record id="family_name_change" model="ir.ui.view">
+        <!-- <record id="family_name_change" model="ir.ui.view">
             <field name="model">account.move</field>
             <field name="inherit_id" ref="edoob_finance.view_move_form_inherit_school_finance"/>
             <field name="arch" type="xml">
@@ -46,7 +46,7 @@
                       <attribute name="string">Family Info</attribute>
                  </xpath>       
             </field>
-        </record>
+        </record> -->
     
     <record id="customer_field_invoice" model="ir.ui.view">
             <field name="model">account.move</field>
@@ -54,7 +54,7 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <xpath expr="//label[@for='partner_id']" position="attributes">
-                      <attribute name="string">Student</attribute>
+                      <attribute name="string">Family</attribute>
                  </xpath>
                  <!-- <xpath expr="//label[@for='partner_shipping_id']" position="attributes">
                       <attribute name="string">Address</attribute>
