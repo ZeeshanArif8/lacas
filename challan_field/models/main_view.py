@@ -19,7 +19,7 @@ class account_fields(models.Model):
         [('siblings', 'Siblings Discount'), ('Scholarship', 'Scholarship Discount'), ], 'Reason For Discount')
 
 
-class school_panel_field(models.Model):
-    _inherit = "school.student"
+# class school_panel_field(models.Model):
+#     _inherit = "school.student"
 
-    Home_room = fields.Char("HomeRoom")
+#     Home_room = fields.Char("HomeRoom")

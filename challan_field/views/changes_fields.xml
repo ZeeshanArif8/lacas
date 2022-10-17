@@ -163,7 +163,7 @@
 
         
     
-    <record id="inherit_school_student_homeroom" model="ir.ui.view">
+    <!-- <record id="inherit_school_student_homeroom" model="ir.ui.view">
             <field name="model">school.student</field>
             <field name="inherit_id" ref="edoob.school_student_view_form"/>
             <field name="arch" type="xml">
@@ -171,5 +171,5 @@
                        <field name="Home_room"/>
                  </xpath>     
             </field>
-        </record>
+        </record> -->
 </odoo>
