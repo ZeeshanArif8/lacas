@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="view_move_form_inherit_credit" model="ir.ui.view">
+            <field name="name">account.move.form.inherit.creditnote</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_date']" position="after">
+                <field name="withdrawl_submission_date" 
+                attrs="{'invisible': [('move_type', 'in', 'out_invoice')]}"/>
+
+                <field name="actual_leaving_date" 
+                attrs="{'invisible': [('move_type', 'in', 'out_invoice')]}"/>
+                
+                <field name="notice_completion_date" 
+                attrs="{'invisible': [('move_type', 'in', 'out_invoice')]}"/>
+
+                <!-- <field name="school_branch" 
+                attrs="{'invisible': [('move_type', 'in', 'out_invoice')]}"/>
+                <field name="class_grade" 
+                attrs="{'invisible': [('move_type', 'in', 'out_invoice')]}"/>
+                <field name="Roll_no" 
+                attrs="{'invisible': [('move_type', 'in', 'out_invoice')]}"/>
+                <field name="Student_id" 
+                attrs="{'invisible': [('move_type', 'in', 'out_invoice')]}"/> -->
+                </xpath>
+            </field>
+        </record>
+</odoo>
