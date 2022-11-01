@@ -20,6 +20,7 @@
         'reports/sale_agrement_template.xml',
         'reports/admission_challan.xml',
         'reports/invoice_inheritance.xml',
+        'reports/dues_assesment_sheet.xml',
     ],
     "images": [],
     "auto_install": False,
