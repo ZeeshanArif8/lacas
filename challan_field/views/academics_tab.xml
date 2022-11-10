@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="academic_fields" model="ir.ui.view">
+    <!-- <record id="academic_fields" model="ir.ui.view">
         <field name="name">account.move.form</field>
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"></field>
@@ -29,5 +29,5 @@
      
 
     </field>
-</record>
+</record> -->
 </odoo>
