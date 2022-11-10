@@ -28,25 +28,7 @@
             </field>
         </record>
 
-        <!-- <record id="delivery_Address_name" model="ir.ui.view">
-            <field name="model">account.move</field>
-            <field name="inherit_id" ref="sale.account_invoice_form"/>
-            <field name="arch" type="xml">
-            <xpath expr="//field[@name='partner_shipping_id']" position="attributes">
-                      <attribute name="string">Address</attribute>
-                 </xpath>       
-            </field>
-        </record> -->
-
-        <!-- <record id="family_name_change" model="ir.ui.view">
-            <field name="model">account.move</field>
-            <field name="inherit_id" ref="edoob_finance.view_move_form_inherit_school_finance"/>
-            <field name="arch" type="xml">
-            <xpath expr="//field[@name='family_id']" position="attributes">
-                      <attribute name="string">Family Info</attribute>
-                 </xpath>       
-            </field>
-        </record> -->
+        
     
     <record id="customer_field_invoice" model="ir.ui.view">
             <field name="model">account.move</field>
