@@ -18,6 +18,7 @@
         'views/main_view.xml',
         'views/changes_fields.xml',
         'views/cred_note_field.xml',
+        'views/academics_tab.xml',
 
     ],
     "images": [],

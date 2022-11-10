@@ -6,7 +6,7 @@ from dateutil.relativedelta import relativedelta
 
 class credit_notes_fields(models.Model):
     _inherit = "account.move"
-    withdrawl_submission_date = fields.Date(string="Withdrawl Submission")
+    withdrawl_submission_date = fields.Date(string="Withdrawal Submission")
     actual_leaving_date = fields.Date(string="Leaving Date")
     notice_completion_date = fields.Date(string="Notice Completion")
     # school_branch = fields.Char(string="Branch")
@@ -19,7 +19,7 @@ class credit_notes_fields(models.Model):
 
         if self.withdrawl_submission_date:
             self.notice_completion_date = self.withdrawl_submission_date + \
-                relativedelta(months=1)
+                relativedelta(days=29)
 
 
 # class report_sale_preview(models.Model):
