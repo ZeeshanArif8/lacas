@@ -18,9 +18,9 @@ class academics_tab(models.Model):
         compute='_compute_refund_receive', string="Receivable/Refundable")
 
     def _compute_refund_receive(self):
+
         if self.x_studio_charges:
-            refund = 0
-            receive = 0
+
             if self.x_studio_charges.invoice_line_ids:
 
                 for i in self.x_studio_charges.invoice_line_ids:
@@ -34,5 +34,6 @@ class academics_tab(models.Model):
             else:
                 self.refund_receive = 'Refundable'
         else:
-            self.refund_receive = ""
+            self.refund_receive = 'Refundable'
+
 #   record.write({'x_receivable_refundable': 'receivable'})
