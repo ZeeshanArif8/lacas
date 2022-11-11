@@ -37,10 +37,10 @@ class academics_tab(models.Model):
             if self.x_studio_charges.invoice_line_ids:
 
                 for i in self.x_studio_charges.invoice_line_ids:
-                    refund = i.price_subtotal
+                    receive = i.price_subtotal
             if self.invoice_line_ids:
                 for j in self.invoice_line_ids:
-                    receive = j.price_subtotal
+                    refund = j.price_subtotal
 
             if receive > refund:
                 self.refund_receive = 'Receivable'
