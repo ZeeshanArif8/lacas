@@ -32,15 +32,16 @@ class academics_tab(models.Model):
     #             self.notice_fee_withdrawal-self.invoice_line_ids.price_subtotal)
 
     def _compute_refund_receive(self):
+
         if self.x_studio_charges:
 
             if self.x_studio_charges.invoice_line_ids:
 
                 for i in self.x_studio_charges.invoice_line_ids:
-                    receive = i.price_subtotal
+                    refund = i.price_subtotal
             if self.invoice_line_ids:
                 for j in self.invoice_line_ids:
-                    refund = j.price_subtotal
+                    receive = j.price_subtotal
 
             if receive > refund:
                 self.refund_receive = 'Receivable'
@@ -48,6 +49,23 @@ class academics_tab(models.Model):
                 self.refund_receive = 'Refundable'
         else:
             self.refund_receive = 'Refundable'
+
+        # if self.x_studio_charges:
+
+        #     if self.x_studio_charges.invoice_line_ids:
+
+        #         for i in self.x_studio_charges.invoice_line_ids:
+        #             receive = i.price_subtotal
+        #     if self.invoice_line_ids:
+        #         for j in self.invoice_line_ids:
+        #             refund = j.price_subtotal
+
+        #     if receive > refund:
+        #         self.refund_receive = 'Receivable'
+        #     else:
+        #         self.refund_receive = 'Refundable'
+        # else:
+        #     self.refund_receive = 'Refundable'
 
     #     if self.x_studio_charges:
     #         if self.x_studio_charges.invoice_line_ids:
