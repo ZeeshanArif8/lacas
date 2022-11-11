@@ -32,6 +32,25 @@ class academics_tab(models.Model):
     #             self.notice_fee_withdrawal-self.invoice_line_ids.price_subtotal)
 
     def _compute_refund_receive(self):
+        if self.x_studio_charges:
+            if self.x_studio_charges.invoice_line_ids:
+                for i in self.x_studio_charges.invoice_line_ids:
+                    if i.product_id.id == 108:
+                        receive = i.price_subtotal
+                        refund = self.invoice_line_ids.price_subtotal
+                        if receive > refund:
+
+                            self.refund_receive = "Receivable"
+                        else:
+
+                            self.refund_receive = "Refundable"
+                    if i.product_id.id == 80:
+                        refund = i.price_subtotal
+                        receive = self.invoice_line_ids.price_subtotal
+                        if receive > refund:
+                            self.refund_receive = "Receivable"
+                        else:
+                            self.refund_receive = "Receivable"
 
         # if self.x_studio_charges:
 
@@ -54,22 +73,22 @@ class academics_tab(models.Model):
         #             self.refund_receive = "Receivable"
         #         else:
         #             self.refund_receive = "Refundable"
+##########################
+        # if self.x_studio_charges:
 
-        if self.x_studio_charges:
+        #     if self.x_studio_charges.invoice_line_ids:
 
-            if self.x_studio_charges.invoice_line_ids:
+        #         for i in self.x_studio_charges.invoice_line_ids:
+        #             refund = i.price_subtotal
+        #     if self.invoice_line_ids:
+        #         for j in self.invoice_line_ids:
+        #             receive = j.price_subtotal
 
-                for i in self.x_studio_charges.invoice_line_ids:
-                    refund = i.price_subtotal
-            if self.invoice_line_ids:
-                for j in self.invoice_line_ids:
-                    receive = j.price_subtotal
-
-            if receive > refund:
-                self.refund_receive = 'Receivable'
-            else:
-                self.refund_receive = 'Refundable'
-        else:
-            self.refund_receive = 'Refundable'
+        #     if receive > refund:
+        #         self.refund_receive = 'Receivable'
+        #     else:
+        #         self.refund_receive = 'Refundable'
+        # else:
+        #     self.refund_receive = 'Refundable'
 
 #   record.write({'x_receivable_refundable': 'receivable'})
