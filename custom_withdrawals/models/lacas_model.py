@@ -13,3 +13,18 @@ class academics_tab(models.Model):
         'Sister', 'Sister'), ('Grandparent', 'Grandparent'), ('Friend', 'Friend'), ('Guardian', 'Guardian'), ('Other', 'Other')], string="Relation With Student")
     financial_responsibilty_cred_custom = fields.Selection(
         [('Yes', 'Yes'), ('No', 'No')], string="Financial Responsibilty")
+
+    refund_receive = fields.Char(
+        compute='_compute_refund_receive', string="Receivable/Refundable")
+
+    def _compute_refund_receive(self):
+        for i in self.x_studio_charges.invoice_line_ids:
+            refund = i.price_subtotal
+        for j in self.invoice_line_ids:
+            receive = j.price_subtotal
+
+        if receive > refund:
+            self.refund_receive = 'Receivable'
+        else:
+            self.refund_receive = 'Refundable'
+#   record.write({'x_receivable_refundable': 'receivable'})
