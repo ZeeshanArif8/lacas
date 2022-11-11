@@ -23,6 +23,7 @@
                 </notebook>
 
     </field>
+    </record>
 
     <record id="notice_fields_list_inherit" model="ir.ui.view">
         <field name="name">account.move.form.inherit.withdrawals.notice</field>
@@ -36,7 +37,7 @@
            
            </xpath>
         </field>
-   </record>
+   
 </record>
 
 
