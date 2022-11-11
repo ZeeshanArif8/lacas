@@ -38,19 +38,14 @@ class academics_tab(models.Model):
                     if i.product_id.id == 108:
                         receive = i.price_subtotal
                         refund = self.invoice_line_ids.price_subtotal
-                        if receive > refund:
-
-                            self.refund_receive = "Receivable"
-                        else:
-
-                            self.refund_receive = "Refundable"
                     if i.product_id.id == 80:
                         refund = i.price_subtotal
                         receive = self.invoice_line_ids.price_subtotal
-                        if receive > refund:
-                            self.refund_receive = "Receivable"
-                        else:
-                            self.refund_receive = "Receivable"
+
+                if receive > refund:
+                    self.refund_receive = "Receivable"
+                else:
+                    self.refund_receive = "Refundable"
 
         # if self.x_studio_charges:
 
