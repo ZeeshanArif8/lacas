@@ -18,13 +18,21 @@ class academics_tab(models.Model):
         compute='_compute_refund_receive', string="Receivable/Refundable")
 
     def _compute_refund_receive(self):
-        for i in self.x_studio_charges.invoice_line_ids:
-            refund = i.price_subtotal
-        for j in self.invoice_line_ids:
-            receive = j.price_subtotal
+        if self.x_studio_charges:
+            refund = 0
+            receive = 0
+            if self.x_studio_charges.invoice_line_ids:
 
-        if receive > refund:
-            self.refund_receive = 'Receivable'
+                for i in self.x_studio_charges.invoice_line_ids:
+                    refund = i.price_subtotal
+            if self.invoice_line_ids:
+                for j in self.invoice_line_ids:
+                    receive = j.price_subtotal
+
+            if receive > refund:
+                self.refund_receive = 'Receivable'
+            else:
+                self.refund_receive = 'Refundable'
         else:
-            self.refund_receive = 'Refundable'
+            self.refund_receive = ""
 #   record.write({'x_receivable_refundable': 'receivable'})
