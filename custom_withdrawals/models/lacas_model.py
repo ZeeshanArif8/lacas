@@ -16,8 +16,8 @@ class academics_tab(models.Model):
 
     notice_fee_withdrawal = fields.Monetary(
         compute='_compute_notice_fee', string="Notice Fee")
-    # amount_total_withdrawal = fields.Monetary(
-    #     compute='_compute_total_amount', string="total withdrawal")
+    amount_total_withdrawal = fields.Monetary(
+        compute='_compute_total_amount', string="Total Withdrawal")
     refund_receive = fields.Char(
         compute='_compute_refund_receive', string="Receivable/Refundable")
 
@@ -28,10 +28,12 @@ class academics_tab(models.Model):
         else:
             self.notice_fee_withdrawal = 0
 
-    # def _compute_total_amount(self):
-    #     if self.move_type == "out_refund":
-    #         self.amount_total_withdrawal = abs(
-    #             self.notice_fee_withdrawal-self.invoice_line_ids.price_subtotal)
+    def _compute_total_amount(self):
+        if self.invoice_line_ids:
+            self.amount_total_withdrawal = abs(
+                self.notice_fee_withdrawal-self.invoice_line_ids.price_subtotal)
+        else:
+            self.amount_total_withdrawal = 0
 
     def _compute_refund_receive(self):
 

@@ -33,7 +33,7 @@
 
        <xpath expr="//field[@name='tax_totals_json']" position="after">
            <field name="notice_fee_withdrawal" attrs="{'invisible':[('move_type','!=','out_refund')]}"/>
-           <!-- <field name="amount_total_withdrawal" attrs="{'invisible':[('move_type','!=','out_refund')]}"/> -->
+           <field name="amount_total_withdrawal" attrs="{'invisible':[('move_type','!=','out_refund')]}"/>
            
            </xpath>
         </field>
