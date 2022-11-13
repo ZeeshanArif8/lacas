@@ -24,14 +24,16 @@ class academics_tab(models.Model):
     def _compute_notice_fee(self):
         # if self.move_type == "out_refund":
         if self.x_studio_charges:
-            self.notice_fee_withdrawal = self.x_studio_charges.invoice_line_ids.price_subtotal
+            for inv_line in self.x_studio_charges.invoice_line_ids:
+                self.notice_fee_withdrawal = inv_line.price_subtotal
         else:
             self.notice_fee_withdrawal = 0
 
     def _compute_total_amount(self):
         if self.invoice_line_ids:
-            self.amount_total_withdrawal = abs(
-                self.notice_fee_withdrawal-self.invoice_line_ids.price_subtotal)
+            for cred in self.invoice_line_ids:
+                self.amount_total_withdrawal = abs(
+                    self.notice_fee_withdrawal-cred.price_subtotal)
         else:
             self.amount_total_withdrawal = 0
 
