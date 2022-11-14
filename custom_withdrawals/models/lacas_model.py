@@ -35,25 +35,22 @@ class academics_tab(models.Model):
 
         if self.x_studio_charges:
 
-            if self.move_type == "out_refund":
-                for i in self.x_studio_charges.invoice_line_ids:
-                    receive = i.price_subtotal
-                for j in self.invoice_line_ids:
-                    refund = j.price_subtotal
-                if receive > refund:
-                    self.refund_receive = "Receivable"
-                else:
-                    self.refund_receive = "Refundable"
+            if self.x_studio_charges.invoice_line_ids:
 
-            if self.move_type == "out_invoice":
                 for i in self.x_studio_charges.invoice_line_ids:
-                    refund = i.price_subtotal
+                    #refund = i.price_subtotal
+                    receive = i.price_subtotal
+            if self.invoice_line_ids:
                 for j in self.invoice_line_ids:
-                    receive = j.price_subtotal
-                if receive > refund:
-                    self.refund_receive = "Receivable"
-                else:
-                    self.refund_receive = "Refundable"
+                    #receive = j.price_subtotal
+                    refund = j.price_subtotal
+
+            if receive > refund:
+                self.refund_receive = 'Receivable'
+            else:
+                self.refund_receive = 'Refundable'
+        else:
+            self.refund_receive = 'Refundable'
 
         # if self.x_studio_charges:
 
