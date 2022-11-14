@@ -39,7 +39,37 @@
         </field>
    
 </record> -->
+    
+  <record id="list_view_fields_credit_note" model="ir.ui.view">
+        <field name="name">list.view.fields.credit.note</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_out_credit_note_tree"></field>
+        <field name="arch" type="xml">
 
+       <xpath expr="//field[@name='invoice_partner_display_name']" position="after"> 
+           <field name="rollno_cred_custom" />  
+           <field name="remarks_cred_custom" /> 
+           <field name="refund_receive" />   
+           </xpath>
+
+           <field name="name" position="attributes">
+              <attribute name="string">Withdrawal Number</attribute> 
+           </field>
+           <field name="amount_total_signed" position="attributes">
+              <attribute name="string">Security</attribute> 
+           </field>
+           <field name="invoice_date_due" position="attributes">
+              <attribute name="optional">hide</attribute> 
+           </field>
+           <field name="activity_ids" position="attributes">
+              <attribute name="optional">hide</attribute> 
+           </field>
+           <field name="amount_untaxed_signed" position="attributes">
+              <attribute name="optional">hide</attribute> 
+           </field>    
+           
+        </field>
+   </record>
 
     
 </odoo>
