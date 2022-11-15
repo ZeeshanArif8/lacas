@@ -7,7 +7,7 @@ from odoo.exceptions import UserError
 
 class extwiz(models.TransientModel):
     _inherit = "account.payment.register"
-    ol_check_in_favor_of = fields.Char('check in favor of')
+    ol_check_in_favor_of = fields.Char('Check in Favor Of')
     @api.model
     def _create_payments(self):
         payments=super(extwiz,self)._create_payments()
@@ -17,4 +17,4 @@ class extwiz(models.TransientModel):
         return payments
 class extpayment(models.Model):
     _inherit = "account.payment"
-    ol_check_in_favor_of = fields.Char('check in favor of')
+    ol_check_in_favor_of = fields.Char('Check in Favor Of')
