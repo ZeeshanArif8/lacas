@@ -10,7 +10,7 @@ class extwiz(models.TransientModel):
     ol_check_in_favor_of = fields.Char('check in favor of')
     @api.model
     def _create_payments(self):
-        payments=super(ext,self)._create_payments()
+        payments=super(extwiz,self)._create_payments()
 
         for payment in payments:
             payment.x_check_in_favor_of = self.ol_check_in_favor_of
