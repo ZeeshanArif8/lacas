@@ -14,28 +14,29 @@ class academics_tab(models.Model):
     financial_responsibilty_cred_custom = fields.Selection(
         [('Yes', 'Yes'), ('No', 'No')], string="Financial Responsibilty")
 
-#     notice_fee_withdrawal = fields.Monetary(
-#         compute='_compute_notice_fee', string="Notice Fee")
-#     amount_total_withdrawal = fields.Monetary(
-#         compute='_compute_total_amount', string="Total Withdrawal")
+    notice_fee_withdrawal = fields.Monetary(compute='_compute_notice_fee', string="Notice Fee")
+    amount_total_withdrawal = fields.Monetary(compute='_compute_total_amount', string="Total Withdrawal")
+
     refund_receive = fields.Char(
         compute='_compute_refund_receive', string="Receivable/Refundable")
+    
+    def _compute_notice_fee(self):
+        # if self.move_type == "out_refund":
+        if self.x_studio_charges:
+            for inv_line in self.x_studio_charges.invoice_line_ids:
+                self.notice_fee_withdrawal = inv_line.price_subtotal
+        else:
+            self.notice_fee_withdrawal = 0
 
-#    def _compute_notice_fee(self):
-#         # if self.move_type == "out_refund":
-#         if self.x_studio_charges:
-#             for inv_line in self.x_studio_charges.invoice_line_ids:
-#                 self.notice_fee_withdrawal = inv_line.price_subtotal
-#         else:
-#             self.notice_fee_withdrawal = 0
+    def _compute_total_amount(self):
+        if self.invoice_line_ids:
+            for cred in self.invoice_line_ids:
+                self.amount_total_withdrawal = abs(
+                    self.notice_fee_withdrawal-cred.price_subtotal)
+        else:
+            self.amount_total_withdrawal = 0
 
-#     def _compute_total_amount(self):
-#         if self.invoice_line_ids:
-#             for cred in self.invoice_line_ids:
-#                 self.amount_total_withdrawal = abs(
-#                     self.notice_fee_withdrawal-cred.price_subtotal)
-#         else:
-#             self.amount_total_withdrawal = 0
+    
 
     def _compute_refund_receive(self):
 
