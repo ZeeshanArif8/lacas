@@ -13,7 +13,7 @@
     'website': '',
     'images': [
     ],
-    'depends': ["mrp",
+    'depends': ["account",
         
     ],
     'data': [
