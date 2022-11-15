@@ -13,7 +13,7 @@ class extwiz(models.TransientModel):
         payments=super(extwiz,self)._create_payments()
 
         for payment in payments:
-            payment.x_check_in_favor_of = self.ol_check_in_favor_of
+            payment.ol_check_in_favor_of = self.ol_check_in_favor_of
         return payments
 class extpayment(models.Model):
     _inherit = "account.payment"
