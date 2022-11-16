@@ -23,10 +23,8 @@ class academics_tab(models.Model):
     def _compute_notice_fee(self):
         # if self.move_type == "out_refund":
         if self.x_studio_charges:
-            self.notice_fee_withdrawal = self.x_studio_charges.tax_totals_json
-            
-#             for inv_line in self.x_studio_charges.invoice_line_ids:
-                
+            for inv_line in self.x_studio_charges.invoice_line_ids:
+                self.notice_fee_withdrawal = inv_line.price_subtotal   
         else:
             self.notice_fee_withdrawal = 0
 
